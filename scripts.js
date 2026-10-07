@@ -8,8 +8,8 @@
 //     Luego retorna una frase: "Soy <nombre> y tengo <edad> años."
 
 const presentarse = () => {
-    let nombre = 'Kevin'
-    let edad = 22
+    let nombre = 'Gabriel'
+    let edad = 18
 
     return `Soy ${nombre} y tengo ${edad} años`
 };
@@ -17,7 +17,6 @@ const presentarse = () => {
 // 1.2 Dado el valor 42, retorna su tipo de dato como string (ej: "number")
 
 const obtenerTipo = (valor) => {
-    // TODO
 };
 
 // ============================================================
@@ -31,7 +30,6 @@ const obtenerTipo = (valor) => {
 //     "cero" si es exactamente 0
 
 const clasificarNumero = (num) => {
-    // TODO
 };
 
 // 2.2 Recibe una nota (0-100) y retorna la letra según:
@@ -39,7 +37,6 @@ const clasificarNumero = (num) => {
 //     60-69 => "D", menos de 60 => "F"
 
 const notaALetra = (nota) => {
-    // TODO
 };
 
 // ============================================================
