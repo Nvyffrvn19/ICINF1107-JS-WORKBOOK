@@ -17,6 +17,7 @@ const presentarse = () => {
 // 1.2 Dado el valor 42, retorna su tipo de dato como string (ej: "number")
 
 const obtenerTipo = (valor) => {
+    return typeof valor
 };
 
 // ============================================================
@@ -30,6 +31,15 @@ const obtenerTipo = (valor) => {
 //     "cero" si es exactamente 0
 
 const clasificarNumero = (num) => {
+    if (num > 0) {
+        return "positivo";
+    }
+    else if (num < 0) {
+        return "negativo";
+    }
+    else {
+        return "cero";
+    }
 };
 
 // 2.2 Recibe una nota (0-100) y retorna la letra según:
@@ -37,6 +47,21 @@ const clasificarNumero = (num) => {
 //     60-69 => "D", menos de 60 => "F"
 
 const notaALetra = (nota) => {
+    if (nota >= 90 && nota <= 100) {
+        return "A";
+    }
+    else if (nota >= 80 && nota <= 89) {
+        return "B";
+    }
+    else if (nota >= 70 && nota <= 79) {
+        return "C"
+    }
+    else if (nota >= 60 && nota <= 69) {
+        return "D"
+    }
+    else {
+        return "F"
+    }
 };
 
 // ============================================================
