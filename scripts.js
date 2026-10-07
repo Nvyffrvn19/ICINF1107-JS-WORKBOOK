@@ -165,19 +165,31 @@ const ordenarSinSort = (arr) => {
 // 5.1 Retorna el factorial de n. Ej: factorial(5) -> 120
 
 const factorial = (n) => {
-    // TODO
+    if (n === 0 || n === 1) {
+        return 1;
+    }
+    let resultado = 1;
+    for (let i = 2; i <= n; i++) {
+        resultado *= i;
+    }
+    return resultado;
 };
 
 // 5.2 Retorna true si la palabra es un palíndromo. Ej: "oso" -> true
 
 const esPalindromo = (palabra) => {
-    // TODO
+    const palabraReversa = palabra.split("").reverse().join("");
+    return palabra === palabraReversa;
 };
 
 // 5.3 Dado un array, retorna sus elementos al revés. NO uses .reverse()
 
 const invertir = (arr) => {
-    // TODO
+    const invertido = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+        invertido.push(arr[i]);
+    }
+    return invertido;
 };
 
 // ============================================================
