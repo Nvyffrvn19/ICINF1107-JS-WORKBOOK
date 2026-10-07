@@ -100,33 +100,61 @@ const calificaciones = [72, 95, 58, 88, 100, 65];
 // 4.1 Retorna el promedio de las calificaciones.
 
 const promedio = (arr) => {
-    // TODO
+    let suma = 0;
+    for (let i = 0; i < arr.length; i++) {
+        suma += arr[i];
+    }
+    return suma / arr.length;
 };
 
 // 4.2 Retorna la calificación más alta.
 
 const maximo = (arr) => {
-    // TODO
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    return max;
 };
 
 // 4.3 Retorna solo las calificaciones aprobadas (>= 60).
 
 const aprobadas = (arr) => {
-    // TODO
+    const aprobadas = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 60) {
+            aprobadas.push(arr[i]);
+        }
+    }
+    return aprobadas;
 };
 
 // 4.4 Retorna un nuevo array con cada calificación convertida a porcentaje de 100.
 //     Ej: [72, 95] -> [72%, 95%] (como strings)
 
 const aPorcentaje = (arr) => {
-    // TODO
+    const porcentajes = [];
+    for (let i = 0; i < arr.length; i++) {
+        porcentajes.push(arr[i] + "%");
+    }
+    return porcentajes;
 };
 
 // 4.5 Ordena el array de menor a mayor sin usar el método .sort().
 //     Ej: ordenarSinSort([5, 3, 8, 1, 2]) -> [1, 2, 3, 5, 8]
 
 const ordenarSinSort = (arr) => {
-    // TODO
+    const ordenado = [...arr];
+    for (let i = 0; i < ordenado.length - 1; i++) {
+        for (let j = 0; j < ordenado.length - 1 - i; j++) {
+            if (ordenado[j] > ordenado[j + 1]) {
+                [ordenado[j], ordenado[j + 1]] = [ordenado[j + 1], ordenado[j]];
+            }
+        }
+    }
+    return ordenado;
 };
 
 // ============================================================
