@@ -202,14 +202,27 @@ const invertir = (arr) => {
 //     muestra en #mensaje: "¡Hola, <valor del input>!"
 
 const saludar = () => {
-    // TODO
+    const boton = document.getElementById("saludar");
+    const input = document.getElementById("nombre");
+    const mensaje = document.getElementById("mensaje");
+
+    boton.addEventListener("click", () => {
+        const nombre = input.value;
+        mensaje.textContent = `¡Hola, ${nombre}!`;
+    });
 };
 
 // 6.2 Cuando el usuario escriba en #texto, muestra en #contador
 //     la cantidad de caracteres: "3 caracteres"
 
 const contarCaracteres = () => {
-    // TODO
+    const texto = document.getElementById("texto");
+    const contador = document.getElementById("contador");
+
+    texto.addEventListener("input", () => {
+        const cantidad = texto.value.length;
+        contador.textContent = `${cantidad} caracteres`;
+    });
 };
 
 // ============================================================
