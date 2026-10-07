@@ -72,14 +72,22 @@ const notaALetra = (nota) => {
 // 3.1 Retorna la suma de todos los números del 1 al n (inclusive).
 
 const sumarHasta = (n) => {
-    // TODO
+    let suma = 0;
+    for (let i = 1; i <= n; i++) {
+        suma += i;
+    }
+    return suma;
 };
 
 // 3.2 Retorna un array con los números del 1 al n.
 //     Ej: contarHasta(5) => [1, 2, 3, 4, 5]
 
 const contarHasta = (n) => {
-    // TODO
+    const resultado = [];
+    for (let i = 1; i <= n; i++) {
+        resultado.push(i);
+    }
+    return resultado;
 };
 
 // ============================================================
